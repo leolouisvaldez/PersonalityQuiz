@@ -77,12 +77,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="5XT-Yc-LhP" kind="show" identifier="startQuiz" id="9aj-dN-eWe"/>
+                        <segue destination="rNA-J0-pT1" kind="show" identifier="startQuiz" id="IUg-lB-X1a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42.399999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1591" y="134"/>
         </scene>
         <!--QuestionVC-->
         <scene sceneID="TH6-ta-4dZ">
@@ -219,11 +219,14 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSF-JW-V3I">
                                         <rect key="frame" x="0.0" y="90.5" width="343" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="vaU-Jb-EVA" eventType="touchUpInside" id="Hes-8B-zHI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkn-L8-p89">
-                                <rect key="frame" x="16" y="40" width="343" height="38.5"/>
+                                <rect key="frame" x="16" y="84" width="343" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -273,12 +276,12 @@
                         <outlet property="singleButton3" destination="7N0-dM-gfl" id="7Kr-6F-AtM"/>
                         <outlet property="singleButton4" destination="5Tr-l6-LhG" id="V2B-Gf-Upe"/>
                         <outlet property="singleStackView" destination="Hxa-FF-Y6J" id="tDq-m7-shH"/>
-                        <segue destination="fxj-pX-4X3" kind="show" id="MjD-YR-ZbG"/>
+                        <segue destination="fxj-pX-4X3" kind="show" identifier="ResultsSegue" id="MjD-YR-ZbG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuw-52-Sb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="134"/>
+            <point key="canvasLocation" x="3330" y="134"/>
         </scene>
         <!--ResultsVC-->
         <scene sceneID="Twh-XG-FRK">
@@ -315,7 +318,11 @@
                         <viewLayoutGuide key="safeArea" id="usd-iQ-14W"/>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="dEC-Cv-IGH">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="jKo-Xl-yUe"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="jKo-Xl-yUe">
+                            <connections>
+                                <segue destination="BqI-I7-u73" kind="unwind" unwindAction="unwindtoViewControllerWithSegue:" id="ZQq-EG-WZp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="resultsDefinition" destination="Ftv-IB-pOT" id="asP-M1-xTr"/>
@@ -323,30 +330,27 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ccp-C9-UEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BqI-I7-u73" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2284" y="134"/>
+            <point key="canvasLocation" x="4162.3999999999996" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="6it-xK-juh">
+        <scene sceneID="9DY-us-A8i">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5XT-Yc-LhP" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rNA-J0-pT1" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EI0-fb-Xzx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lbE-9l-1Wc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vaU-Jb-EVA" kind="relationship" relationship="rootViewController" id="IGV-in-0Dt"/>
-                        <segue destination="vaU-Jb-EVA" kind="show" identifier="s" id="0cs-8z-pAp"/>
+                        <segue destination="vaU-Jb-EVA" kind="relationship" relationship="rootViewController" id="CTq-4s-tX1"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nZM-Ou-RsI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIP-Zs-jZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842" y="134"/>
+            <point key="canvasLocation" x="2503.1999999999998" y="133.5832083958021"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="0cs-8z-pAp"/>
-    </inferredMetricsTieBreakers>
 </document>

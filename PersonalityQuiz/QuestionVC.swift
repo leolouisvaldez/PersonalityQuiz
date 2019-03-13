@@ -55,7 +55,7 @@ var questionIndex = 0
             Answer(text: "Carrots", type: .rabbit),
             Answer(text: "Corn", type: .turtle)
             ]),
-        Question(text: "Which ac", type: .multiple, answers: [
+        Question(text: "Which activities do you enjoy?", type: .multiple, answers: [
             Answer(text: "Swimming", type: .turtle),
             Answer(text: "Sleeping", type: .cat),
             Answer(text: "Cuddling", type: .rabbit),
@@ -111,9 +111,9 @@ var questionIndex = 0
     func updateSingleStack(using answers: [Answer]) {
         singleStackView.isHidden = false
         singleButton1.setTitle(answers[0].text, for: .normal)
-        singleButton1.setTitle(answers[1].text, for: .normal)
-        singleButton1.setTitle(answers[2].text, for: .normal)
-        singleButton1.setTitle(answers[3].text, for: .normal)
+        singleButton2.setTitle(answers[1].text, for: .normal)
+        singleButton3.setTitle(answers[2].text, for: .normal)
+        singleButton4.setTitle(answers[3].text, for: .normal)
         
     }// end updateSS
     
