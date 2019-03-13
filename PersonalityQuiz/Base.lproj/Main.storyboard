@@ -93,31 +93,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Hxa-FF-Y6J" userLabel="Single Answer Stack View">
-                                <rect key="frame" x="16" y="243.5" width="46" height="180"/>
+                                <rect key="frame" x="16" y="243.5" width="343" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wI-ap-RkL">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="vaU-Jb-EVA" eventType="touchUpInside" id="zrj-Hy-p5z"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ht6-O2-irp">
-                                        <rect key="frame" x="0.0" y="50" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="50" width="343" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="vaU-Jb-EVA" eventType="touchUpInside" id="wKT-gX-MUp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-dM-gfl">
-                                        <rect key="frame" x="0.0" y="100" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="100" width="343" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="vaU-Jb-EVA" eventType="touchUpInside" id="TOJ-3M-WKL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Tr-l6-LhG">
-                                        <rect key="frame" x="0.0" y="150" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="150" width="343" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="vaU-Jb-EVA" eventType="touchUpInside" id="FfZ-7q-PHc"/>
@@ -251,6 +251,7 @@
                             <constraint firstItem="Hxa-FF-Y6J" firstAttribute="leading" secondItem="JvQ-T4-gcB" secondAttribute="leadingMargin" id="cAS-RX-lER"/>
                             <constraint firstItem="cHg-Wo-3lf" firstAttribute="centerY" secondItem="JvQ-T4-gcB" secondAttribute="centerY" id="gQM-QC-yg7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cHg-Wo-3lf" secondAttribute="trailing" id="uUS-Be-gER"/>
+                            <constraint firstItem="Hxa-FF-Y6J" firstAttribute="centerX" secondItem="JvQ-T4-gcB" secondAttribute="centerX" id="ugt-5I-7hP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GMO-Qh-LeV"/>
                     </view>
@@ -281,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuw-52-Sb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3330" y="134"/>
+            <point key="canvasLocation" x="3328.8000000000002" y="133.5832083958021"/>
         </scene>
         <!--ResultsVC-->
         <scene sceneID="Twh-XG-FRK">
